@@ -1,4 +1,5 @@
 fr = open("Subory/meteo_stanice.txt", "r", encoding = "utf-8")
+fw = open("Subory/meteo_stanice_vystup.txt", "w", encoding = "utf-8")
 
 counter = 0
 temperatures = []
@@ -15,15 +16,8 @@ for row in fr:
     print(processed_row)
     counter += 1
 
-
-
-
-
-
-
-
-print(f"Počet meraní je: {counter}")
-print(f"Teploty sú: {temperatures}")
-print(f"Najvyššia teplota je: {max(temperatures)} a bola nameraná na stanici {station}")
-print(f"Najvyššia teplota (ručne najdená) je: {max_temperature} a bola nameraná na stanici {station}")
-print(f"Priemerná teplota je: {round(sum(temperatures) / counter, 2)}")
+fw.write(f"Počet meraní je: {counter}\n")
+fw.write(f"Namerané teploty sú: {temperatures}\n")
+fw.write(f"Najvyššia teplota je: {max(temperatures)} a bola nameraná na stanici {station}\n")
+fw.write(f"Najvyššia teplota (ručne najdená) je: {max_temperature} a bola nameraná na stanici {station}\n")
+fw.write(f"Priemerná teplota je: {round(sum(temperatures) / counter, 2)}\n")
