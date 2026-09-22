@@ -1,0 +1,5 @@
+Počet meraní je: 12
+Namerané teploty sú: [10.3, 8.2, -1.5, 1.4, 18.2, -2.3, 10.3, 8.7, -0.5, 12.4, 6.9, -1.5]
+Najvyššia teplota je: 18.2 a bola nameraná na stanici M17
+Najvyššia teplota (ručne najdená) je: 18.2 a bola nameraná na stanici M17
+Priemerná teplota je: 5.88
