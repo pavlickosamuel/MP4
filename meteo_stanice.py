@@ -1,5 +1,5 @@
-fr = open("Subory/meteo_stanice.txt", "r", encoding = "utf-8")
-fw = open("Subory/meteo_stanice_vystup.txt", "w", encoding = "utf-8")
+fr = open("meteo_stanice.txt", "r", encoding = "utf-8")
+fw = open("meteo_stanice_vystup.txt", "w", encoding = "utf-8")
 
 counter = 0
 temperatures = []
